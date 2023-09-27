@@ -6,11 +6,11 @@
 
 header {
     background-color: #cad2dc;
-    padding: 3px;
+    padding: 20px;
 }
 
 h1 {
-    color: #fff;
+    color: #7D8996;
     padding-left: 20px;
 }
 
@@ -46,9 +46,17 @@ body {
     background-color: #cad2dc
 }
 
-h2 {;
-    padding: 15px;
-    background-color: #7D8996
+#overline {
+    width: 100px;
+    border-top: 2px solid #755b64;
+}
+
+h2 {
+    padding: 25px;
+    background-color: #7D8996;
+    text-align: center;
+    text-decoration: overline #f5dac8;
+    color: #755b64;;
 }
 
 .avatar {
@@ -58,3 +66,19 @@ h2 {;
     border-radius: 20px;
 }
 
+p {
+    padding: 25px;
+}
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+}
+
+/* Large phones */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Small phones */
+@media screen and (max-width: 576px) {
+}
