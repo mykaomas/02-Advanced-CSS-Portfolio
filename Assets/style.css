@@ -73,13 +73,32 @@ p {
     padding: 25px;
 }
 
+.cat-img {
+    position: relative;
+    width: 350px;
+    padding-top: 30px;
+}
+
+.other-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+#main-img, #other-imgs {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
 footer {
     background-color: #7D8996
 }
 
 footer a {
     display: inline-block;
-    margin: 10px 90px 10px;
+    padding: 3% 10% 3%;
     color: #f5dac8;
     font-size: 20px;
     text-decoration: 4px underline overline #d7dfbf;
