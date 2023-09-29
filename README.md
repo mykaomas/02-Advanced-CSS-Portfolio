@@ -16,7 +16,7 @@ On the Portfolio I added a navigation system for future employers to navigate be
 
 I presented two of the projects I've worked on thus far with embedded links in the image of the project to redirect them to the deployed site. 
 
-I made the website responsive so it is able to adapt to smaller screens, without sacrificing quality or features. 
+I made the website responsive to several different viewports so it is able to adapt to smaller screens, without sacrificing quality or features. 
 
 To make contact easier for potential employers I embedded links to email, phone, and Github. 
 
