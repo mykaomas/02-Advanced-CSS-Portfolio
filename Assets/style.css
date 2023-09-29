@@ -4,9 +4,49 @@
     margin: 0;
     overflow: auto;
 }
-
-header {
+/* Group similar CSS selectors together */
+header, section {
     background-color: #cad2dc;
+}
+
+h2, footer {
+    background-color: #7D8996
+}
+
+.container .text, .container2 .texts, .container2 .texts1, nav ul li a {
+    color: #fff;
+}
+
+.container .text, .container2 .texts, .container2 .texts1 {
+    background-color: gray;
+}
+
+nav ul li a:hover, footer a:hover {
+    color: #c4dce0;
+}
+
+.other-img, #main-img, .other-imgs, .avatar {
+    border-radius: 20px;
+}
+
+.container .text, .container2 .texts, .container2 .texts1 {
+    opacity: .9;
+}
+
+#main-img, .other-imgs, .container, .container2 {
+    justify-content: center;
+}
+
+#main-img, .other-imgs, .container, .container2 {
+    display: flex;
+}
+
+.container2 .texts, .container2 .texts1, .container .text {
+    position: absolute;
+}
+
+/* Start of code for regular destop CSS */
+header {
     padding: 40px;
 }
 
@@ -27,12 +67,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: 4px overline #163643;
+    text-decoration: 4px underline #163643;
 }
 
 nav ul li a:hover {
-    color: #c4dce0;
     font-weight: bold;
     text-decoration: line-through;
 }
@@ -50,7 +88,6 @@ body {
     background-color: #163643
 }
 section {
-    background-color: #cad2dc;
     color: #6f5439;
 }
 
@@ -60,95 +97,68 @@ section {
 
 h2 {
     padding: 25px;
-    background-color: #7D8996;
     font-size: 40px;
     letter-spacing: 7px;
     text-align: center;
     text-decoration: overline #f5dac8;
     text-decoration-thickness: 3px;
-    color: #755b64;;
+    color: #755b64;
 }
 
 .avatar {
     height: 200px;
     float: left;
     margin: 10px;
-    border-radius: 20px;
 }
 
 p {
     padding: 25px;
 }
 
-.container {
-    margin: 3%;
+.container, .container2 {
+    padding: 30px;
+}
+
+.container2 {
+    padding-right: 50px;
+}
+
+#main-img, .other-imgs {
     position: relative;
 }
 
 .cat-img {
-    position: relative;
     width: 350px;
-    border-radius: 20px;
-    box-shadow:inset;
 }
 
 .other-img {
-    position: relative;
+    display: inline-block
     width: 200px;
     height: 200px;
+}
+
+.other-imgs {
     margin: 50px;
-    border-radius: 20px;
 }
 
 .cat-img:hover, .other-img:hover {
     filter:blur(2px)
 }
 
-#main-img, #other-imgs {
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    padding: 1%;
-    filter:grayscale() drop-shadow(16px 16px 20px #d7dfbf);
+#main-img, .other-imgs {
+    filter:grayscale() drop-shadow(30px 30px 60px #d7dfbf);
 }
 
-#other-imgs {
-    display: inline-block;
-    padding-left: 10%;
-}
-
-.container .text p{
-    position: absolute;
-    color: #fff;
-    background-color: gray;
-    left: 40rem;
+.container .text {
+    left: 10rem;
     top: 2rem;
     padding: 15px 1rem;
-    opacity: .9;
 }
 
-.container2 .text1 p{
-    position: absolute;
-    color: #fff;
-    background-color: gray;
-    left: 35rem;
-    top: 4rem;
-    padding: 0 30px;
-    opacity: .9;
-}
-
-.container3 .text2 p{
-    position: absolute;
-    color: #fff;
-    background-color: gray;
-    right:35rem;
-    top: 4rem;
-    padding: 0 30px;
-    opacity: .9;
-}
-
-footer {
-    background-color: #7D8996
+.container2 .texts, .container2 .texts1 {
+    top: 1rem;
+    left: 1rem;
+    padding: 5px 20px;
 }
 
 footer a {
@@ -161,24 +171,57 @@ footer a {
 }
 
 footer a:hover {
-    color: #c4dce0;
     text-decoration: line-through;
 }
 
-/* Large phones */
+/* Large phones  */
 @media screen and (max-width: 900px) {
+
+    /* Group similar CSS selectors together */
+    header h1 #name, footer a {
+        color: #B090ED;
+    }
+
+    .container .text, .container2 .texts, .container2 .texts1 {
+        background-color: #0EEF63;
+    }
+
+    body, header, section, h2, footer {
+        background-color: #000
+    }
+
+    footer a:hover, nav ul li a:hover {
+        color: #fff;
+    }
+
+    .container2 .texts, .container2 .texts1, .container .text {
+        color: yellow;
+    }
+
+    .container, .container2, #main-img, .other-imgs {
+        display: flex;
+    }
+
+    .container, .container2, #main-img, .other-imgs {
+        justify-content: center;
+    }
+
+    .container, .container2 {
+        padding: 30px;
+    }
+
+    .container .text, .container2 .texts, .container2 .texts1 {
+        opacity: .9;
+    }
+
+    /* Start of code after grouping of CSS selectors */
     header {
-        background-color: black;
         padding: 30px;
     }
     
     h1 {
         color: #F17BB4;
         padding-left: 30px;
-    }
-    
-    header h1 #name {
-        color: #B090ED;
     }
     
     nav ul li {
@@ -195,7 +238,6 @@ footer a:hover {
     }
     
     nav ul li a:hover {
-        color: #fff;
         font-weight: bold;
         text-decoration: underline;
     }
@@ -209,16 +251,12 @@ footer a:hover {
         background-position: center;
     }
     
-    body, section {
-        background-color: #000
-    }
     section {
         color: #F4F269;
     }
     
     h2 {
         padding: 20px;
-        background-color: #000;
         font-size: 20px;
         letter-spacing: 6px;
         text-align: center;
@@ -233,89 +271,85 @@ footer a:hover {
         margin: 10px;
         border-radius: 15px;
     }
-
-    .container, .container2, .container3 {
-        overflow: hidden;
-        align-items: center;
-    }
-
-    .cat-img {
+    
+    #main-img, #other-imgs {
         position: relative;
-        align-items: center;
+    }
+    
+    .cat-img {
         width: 300px;
     }
     
-    .other-img {
-        position: relative;
+    .other-img{
+        display: inline-block
         width: 175px;
         height: 175px;
-        margin: 60px;
+        border-radius: 10%;
     }
     
-    #main-img, #other-imgs {
-        justify-content: center;
-        border-radius: 20px;
-        filter:drop-shadow(16px 16px 20px #FCBD49);
+    #main-img, .other-imgs {
+        filter:drop-shadow(20px 20px 40px #FCBD49);
     }
     
-    .container .text p {
+    .container .text {
         position: absolute;
-        font-size: 18px;
-        color: yellow;
-        background-color: #0EEF63;
-        opacity: .8;
-        left: 13rem;
+        left: 8rem;
     }
     
-    .container2 .text1 p {
+    .container2 .texts, .container2 .texts1 {
         position: absolute;
-        font-size: 13px;
-        color: yellow;
-        background-color: #0EEF63;
-        opacity: .8;
-        padding: 5px 80px;
-        left: 15rem;
-    }
-    
-    .container3 .text2 p {
-        position: absolute;
-        font-size: 13px;
-        color: yellow;
-        background-color: #0EEF63;
-        opacity: .8;
-        padding: 5px 80px;
-        left: 13rem;
-    }
-    
-    footer {
-        background-color: #000
+        top: 1rem;
+        padding: 3px 5px;
     }
     
     footer a {
         display: inline-block;
         padding: 3% 3% 3% 13%;
-        color: #B090ED;
         font-size: 25px;
         text-decoration: 4px underline overline #F17BB4;
         letter-spacing: 8px;
     }
     
     footer a:hover {
-        color: #fff;
         text-decoration: line-through;
     }
 
 }
 
 /* Small phones */
-@media screen and (max-width: 600px) {
-    header {
+@media screen and (max-width: 650px) {
+
+    /* Group similar CSS selectors together */
+    header, h2 {
         background-color: #dbd3c2;
+    }
+
+    .container .text, .container2 .texts, .container2 .texts1 {
+        color: #dbd3c2;
+    }
+
+    h1, nav ul li a:hover, footer a:hover {
+        color: #948469;
+    }
+
+    .container .text, .container2 .texts, .container2 .texts1 {
+        background-color: #948469;
+    }
+
+    nav ul li a, footer a {
+        color: #fff;
+    }
+
+    body, section {
+        background-color: #ffff
+    }
+
+    /* Start of code after grouping */
+    header {
         padding: 20px;
     }
     
     h1 {
-        color: #948469;
         padding-left: 20px;
     }
     
@@ -331,12 +365,10 @@ footer a:hover {
     }
     
     nav ul li a {
-        color: #fff;
-        text-decoration: 3px overline #aea29a;
+        text-decoration: 3px underline #aea29a;
     }
     
     nav ul li a:hover {
-        color: #948469;
         font-weight: bold;
         text-decoration: line-through;
     }
@@ -350,23 +382,18 @@ footer a:hover {
         background-position: center;
     }
     
-    body {
-        background-color: #ffff
-    }
     section {
-        background-color: #fff;
         color: #6f5439;
     }
     
     h2 {
         padding: 15px;
-        background-color: #dbd3c2;
         font-size: 20px;
         letter-spacing: 5px;
         text-align: center;
         text-decoration: overline #aea29a;
         text-decoration-thickness: 3px;
-        color: #755b64;;
+        color: #755b64;
     }
     
     .avatar {
@@ -376,59 +403,31 @@ footer a:hover {
         border-radius: 10px;
     }
 
-    .container, .container2, .container3 {
-        overflow: hidden;
-        align-items: center;
+    .container, .container2, #main-img, .other-imgs {
+        display: flex;
+        justify-content: center;
     }
-
+    
     .cat-img {
-        position: relative;
-        align-items: center;
         width: 275px;
     }
     
     .other-img {
-        position: relative;
         width: 150px;
         height: 150px;
-        margin: 50px;
     }
     
-    #main-img, #other-imgs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 20px;
-        filter:drop-shadow(16px 16px 20px #483c36);
+    #main-img, .other-imgs {
+        filter:drop-shadow(15px 15px 30px #483c36);
     }
     
-    .container .text p {
-        position: absolute;
-        font-size: 18px;
-        color: #dbd3c2;
-        background-color: #948469;
-        opacity: .8;
-        left: 13rem;
-    }
-    
-    .container2 .text1 p {
-        position: absolute;
-        font-size: 13px;
-        color: #dbd3c2;
-        background-color: #948469;
-        opacity: .9;
-        padding: 15px 40px;
-        left: 23rem;
-    }
-    
-    .container3 .text2 p {
-        position: absolute;
-        font-size: 13px;
-        color: #dbd3c2;
-        background-color: #948469;
-        opacity: .9;
-        padding: 3px 75px;
+    .container .text {
         left: 9rem;
+    }
+
+    .container2 .texts, .container2 .texts1, .container .text {
+        position: absolute;
+        opacity: .9;
     }
     
     footer {
@@ -438,14 +437,12 @@ footer a:hover {
     footer a {
         display: inline-block;
         padding: 3% 3% 3% 13%;
-        color: #fff;
         font-size: 15px;
         text-decoration: 4px underline overline #aea29a;
         letter-spacing: 7px;
     }
     
     footer a:hover {
-        color: #948469;
         text-decoration: line-through;
     }
-}
+} 
