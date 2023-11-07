@@ -13,11 +13,11 @@ h2, footer {
     background-color: #7D8996
 }
 
-.container .text, .container2 .texts, .container2 .texts1, nav ul li a {
+.container .text, .container2 .texts, .container2 .texts1, .container2 .texts2, nav ul li a {
     color: #fff;
 }
 
-.container .text, .container2 .texts, .container2 .texts1 {
+.container .text, .container2 .texts, .container2 .texts1, .container2 .texts2 {
     background-color: gray;
 }
 
@@ -29,7 +29,7 @@ nav ul li a:hover, footer a:hover {
     border-radius: 20px;
 }
 
-.container .text, .container2 .texts, .container2 .texts1 {
+.container .text, .container2 .texts, .container2 .texts1, .container2 .texts2 {
     opacity: .9;
 }
 
@@ -41,7 +41,7 @@ nav ul li a:hover, footer a:hover {
     display: flex;
 }
 
-.container2 .texts, .container2 .texts1, .container .text {
+.container2 .texts, .container2 .texts1, .container .text, .container2 .texts2 {
     position: absolute;
 }
 
@@ -127,21 +127,23 @@ p {
     position: relative;
 }
 
-.cat-img {
+.drinks-img {
     width: 350px;
 }
 
 .other-img {
-    display: inline-block
+    display: inline-block;
     width: 200px;
     height: 200px;
 }
+
+
 
 .other-imgs {
     margin: 50px;
 }
 
-.cat-img:hover, .other-img:hover {
+.main-img:hover, .other-img:hover {
     filter:blur(2px)
 }
 
@@ -155,7 +157,7 @@ p {
     padding: 15px 1rem;
 }
 
-.container2 .texts, .container2 .texts1 {
+.container2 .texts, .container2 .texts1, .container2 .texts2 {
     top: 1rem;
     left: 1rem;
     padding: 5px 20px;
@@ -182,7 +184,7 @@ footer a:hover {
         color: #B090ED;
     }
 
-    .container .text, .container2 .texts, .container2 .texts1 {
+    .container .text, .container2 .texts, .container2 .texts1, .container2 .texts2 {
         background-color: #0EEF63;
     }
 
@@ -194,7 +196,7 @@ footer a:hover {
         color: #fff;
     }
 
-    .container2 .texts, .container2 .texts1, .container .text {
+    .container2 .texts, .container2 .texts1, .container .text, .container2 .texts2 {
         color: yellow;
     }
 
@@ -210,7 +212,7 @@ footer a:hover {
         padding: 30px;
     }
 
-    .container .text, .container2 .texts, .container2 .texts1 {
+    .container .text, .container2 .texts, .container2 .texts1, .container2 .texts2 {
         opacity: .9;
     }
 
@@ -276,12 +278,12 @@ footer a:hover {
         position: relative;
     }
     
-    .cat-img {
+    .drinks-img {
         width: 300px;
     }
     
     .other-img{
-        display: inline-block
+        display: inline-block;
         width: 175px;
         height: 175px;
         border-radius: 10%;
@@ -408,7 +410,7 @@ footer a:hover {
         justify-content: center;
     }
     
-    .cat-img {
+    .drinks-img {
         width: 275px;
     }
     
